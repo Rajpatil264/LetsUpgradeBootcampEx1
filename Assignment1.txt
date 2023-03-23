@@ -1,0 +1,45 @@
+
+// Program to check the number is Even or Odd.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num;
+    printf("\nEnter the Number : ");
+    cin >> num;
+    if (num % 2 == 0)
+    {
+        printf("The Number is Even.");
+    }
+    else if (num % 2 != 0)
+    {
+        printf("The Number is Odd.");
+    }
+    else
+    {
+        printf("Invalid Input..!");
+    }
+
+    return 0;
+}
+
+// Write a program to swap two number without using third variable
+// It can also be done by add&&sub and mul&&div I will do using XOR gate.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num1, num2;
+    printf("\nEnter the first  number : ");
+    cin >> num1;
+    printf("\nEnter the Second number : ");
+    cin >> num2;
+    num1 = num1 ^ num2;
+    num2 = num1 ^ num2;
+    num1 = num1 ^ num2;
+    printf("\nAfter Swapping");
+    printf("\nValue of First Number  : %d", num1);
+    printf("\nValue of Second Number : %d", num2);
+
+    return 0;
+}
